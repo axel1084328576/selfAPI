@@ -26,12 +26,12 @@ app.use(async (ctx) => {
   const end = new Date().getTime();
 
   ctx.body =
-    "当前访问次数:" +
+    "当前访问次数：" +
     counts +
-    ",本次访问用时" +
+    ",本次访问用时：" +
     (end - start) +
-    "时间:" +
+    "ms，时间：" +
     new Date();
 });
 
-app.listen(3000);
+app.listen(8089);
